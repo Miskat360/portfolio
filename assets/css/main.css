@@ -1425,6 +1425,10 @@ body[theme=white] .contact-sa .box .contact-form textarea {
   background: var(--main-color);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -1551,6 +1555,30 @@ body[theme=black] p {
 }
 .butn:hover .icon.invert img {
   filter: invert(0);
+}
+
+.hamenu .item .social-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 5px;
+}
+.hamenu .item .social-icon img.daily-dev {
+  width: 24px;
+  filter: invert(1);
+}
+.hamenu .item .social-icon a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.hamenu .item .social-icon a:hover {
+  border-color: #fff;
 }
 
 .box-light {

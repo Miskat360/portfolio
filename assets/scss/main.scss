@@ -69,6 +69,10 @@ $desk-lg-screen: 1300px;
 // about page
 @import "about-page";
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -221,6 +225,34 @@ body[theme="black"] {
     .icon.invert {
       img {
         filter: invert(0);
+      }
+    }
+  }
+}
+.hamenu {
+  .item {
+    .social-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 5px;
+      img.daily-dev {
+        width: 24px;
+        filter: invert(1);
+      }
+      a {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        font-size: 14px;
+        transition: all 0.4s;
+
+        &:hover {
+          border-color: #fff;
+        }
       }
     }
   }

@@ -1,0 +1,72 @@
+/* --------------- Menu --------------- */
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 9999999;
+
+  &.nav-scroll {
+    padding: 0;
+    position: fixed;
+    top: -80px;
+    padding: 15px 0;
+    transition: transform 0.8s;
+    transform: translateY(80px);
+    backdrop-filter: blur(10px);
+
+    mix-blend-mode: difference;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 7px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    span {
+      color: white;
+      font-size: 30px;
+      // font-family: melodrama;
+    }
+  }
+
+  .navbar-nav {
+    padding: 2px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    margin-left: 15px;
+
+    .nav-link {
+      padding: 5px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      color: #fff;
+
+      &.active {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .topnav {
+    .butn {
+      padding: 7px 20px;
+      background: #fff;
+      color: #1d1d1d;
+    }
+    .menu-icon {
+      color: white;
+      display: none;
+      @media (width < $desk-md-screen) {
+        display: block;
+      }
+    }
+  }
+}

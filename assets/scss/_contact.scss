@@ -1,0 +1,153 @@
+//contact
+body[theme="black"] {
+  .contact-footer {
+    position: relative;
+    color: whitesmoke;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .contact-sa {
+    .box {
+      background-color: #0a0a0a;
+      color: whitesmoke;
+      transition: background-color 0.5s ease-in-out;
+    }
+  }
+}
+body[theme="white"] {
+  .contact-footer {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .contact-sa {
+    .box {
+      background-color: #ebeaea;
+      color: black;
+      transition: background-color 0.5s ease-in-out;
+      .layers {
+        background: #ebeaea;
+        transition: background-color 0.5s ease-in-out;
+        &:after {
+          background: #ebeaea;
+          opacity: 0.5;
+          transition: background-color 0.5s ease-in-out;
+        }
+      }
+      .contact-form {
+        input,
+        textarea {
+          color: black;
+          border-color: $sub-color;
+        }
+      }
+    }
+  }
+}
+.contact-sa {
+  .box {
+    padding: 120px 60px;
+    border-radius: 15px;
+    background-color: #eee;
+    color: #000;
+    position: relative;
+    z-index: 2;
+
+    .layers {
+      position: absolute;
+      top: -10px;
+      left: 30px;
+      right: 30px;
+      bottom: -10px;
+      background: #0a0a0a;
+      border-radius: 15px;
+      opacity: 0.7;
+      z-index: -1;
+      transition: background-color 0.5s ease-in-out;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        background: #0a0a0a;
+        border-radius: 15px;
+        opacity: 0.7;
+        z-index: -1;
+        transition: background-color 0.5s ease-in-out;
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .sec-head {
+      h4 {
+        font-weight: 400;
+      }
+    }
+  }
+  .sub-color {
+    color: $sub-color;
+  }
+
+  .butn {
+    .icon {
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .contact-form {
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+
+      .star {
+        color: red;
+        padding-left: 5px;
+      }
+    }
+
+    input,
+    textarea {
+      color: #fff;
+      background: transparent;
+      width: 100%;
+      padding: 0 0 10px;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 18px;
+    }
+
+    button {
+      background: transparent;
+      color: #fff;
+    }
+
+    .circle {
+      width: 200px;
+      position: absolute;
+      right: -6%;
+      bottom: 5%;
+      opacity: 0.8;
+      animation: rotate_circle 30s infinite linear;
+      -webkit-animation: rotate_circle 30s infinite linear;
+    }
+    @keyframes rotate_circle {
+      0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+/* --------------- Blogs --------------- */
+
+// .blog-ds{
+//     background: $bg-color;
+
+//     .item{
+
+//         .info{
+//             font-size: 14px;
+
+//             .date{
+//                 color: #808080;
+//             }
+
+//             .dash{
+//                 color: #808080;
+//                 margin: 0 15px;
+//             }
+//         }
+
+//         .img{
+//             position: relative;
+//             height: 300px;
+
+//             > img{
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//                 object-position: center center;
+//             }
+
+//             .icon{
+//                 display: inline-block;
+//                 position: absolute;
+//                 top: 50%;
+//                 left: 50%;
+//                 transform: translateX(-50%) translateY(-50%);
+//                 border-radius: 50%;
+//                 width: 55px;
+//                 height: 55px;
+//                 line-height: 55px;
+//                 text-align: center;
+//                 background: $main-color;
+//                 opacity: 0;
+//                 visibility: hidden;
+//                 transition: all .4s;
+
+//                 img{
+//                     width: 22px;
+//                 }
+//             }
+//         }
+
+//         &:hover{
+
+//             .img{
+
+//                 .icon{
+//                     opacity: 1;
+//                     visibility: visible;
+//                 }
+//             }
+//         }
+//     }
+// }
+body[theme="black"] {
+  .blog-mp {
+    // background-color: black;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+body[theme="white"] {
+  .blog-mp {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+.blog-mp {
+  .sec-head {
+    :nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        margin-top: 0;
+      }
+    }
+  }
+  .bord {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .item {
+    .img {
+      border-radius: 15px;
+      height: 255px;
+      overflow: hidden;
+    }
+    .cont p {
+      margin-top: 3px;
+    }
+  }
+}

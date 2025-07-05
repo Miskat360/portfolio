@@ -1,0 +1,50 @@
+/* --------------- FAQS --------------- */
+
+// .faqs-ds{
+
+//     .accordion-item{
+//         background: $bg-color;
+//         border-radius: 10px;
+//         border: 0;
+//         margin-bottom: 5px;
+
+//         &.active{
+//             background: $main-color;
+//         }
+
+//         .accordion-header{
+//             background: transparent;
+
+//             button{
+//                 background: transparent;
+//                 color: #fff;
+//                 font-size: 24px;
+//                 font-weight: 500;
+//                 line-height: 32px;
+//                 padding: 30px;
+//                 box-shadow: none;
+
+//                 &:after{
+//                     background-image: url(../imgs/pricing/plus-solid.svg);
+//                     filter: invert(1);
+//                 }
+
+//                 &:not(.collapsed){
+
+//                     &:after{
+//                         background-image: url(../imgs/pricing/minus-solid.svg);
+//                     }
+//                 }
+//             }
+//         }
+
+//         .accordion-body{
+//             padding: 0;
+//             padding: 0px 100px 30px 30px;
+
+//             p{
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+// }

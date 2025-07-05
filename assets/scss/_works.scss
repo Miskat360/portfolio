@@ -1,0 +1,212 @@
+/* --------------- Works --------------- */
+
+// .works-ds{
+//     overflow: hidden;
+
+//     .work-box{
+//         clip-path: inset(-100vw -100vw -100vw 0);
+//     }
+
+//     .swiper-container {
+//         overflow: visible;
+//     }
+
+//     .swiper-slide {
+//         width: 75%;
+//     }
+
+//     .sec-head{
+
+//         .butn{
+
+//             &.butn-bord{
+//                 border: 1px solid rgba(0,0,0,.3);
+
+//                 &:hover{
+//                     background: $main-color;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//     }
+
+//     .item{
+
+//         &:hover{
+
+//             .cont{
+
+//                 h4{
+//                     color: $main-color;
+//                 }
+//             }
+//         }
+
+//         .img{
+//             border-radius: 15px;
+//             overflow: hidden;
+//         }
+
+//         .cont{
+//             margin-top: 40px;
+
+//             span{
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+
+//     .swiper-wrapper{
+//         padding-bottom: 60px;
+//     }
+
+//     .swiper-pagination{
+//         bottom: 0;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: auto;
+//         padding: 2px 25px 4px;
+//         border: 1px solid rgba(0,0,0,.15);
+//         border-radius: 30px;
+
+//         .swiper-pagination-bullet-active{
+//             background: $main-color;
+//         }
+//     }
+// }
+.sub-head {
+  position: relative;
+  padding-left: 25px;
+  &::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: $main-color;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    border-radius: 50%;
+  }
+}
+.works-dm {
+  color: whitesmoke;
+  .sec-head {
+    padding-left: 100px;
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  .item {
+    margin-top: 80px;
+
+    &:hover {
+      .img {
+        .tags {
+          opacity: 1;
+        }
+      }
+    }
+
+    .img {
+      overflow: hidden;
+      border-radius: 15px;
+      position: relative;
+
+      .tags {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        opacity: 0;
+        transition: all 0.4s;
+
+        .tag {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8f8f8;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          color: black;
+          border-radius: 30px;
+          padding: 6px;
+          margin-left: -10px;
+          svg {
+            width: 25px;
+            margin-right: 2px;
+          }
+        }
+
+        a {
+          padding: 7px 15px;
+          background: #fff;
+          border-radius: 30px;
+          color: black;
+          font-size: 14px;
+          margin: 0 -10px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            background: $main-color;
+          }
+        }
+
+        &.colorful {
+          a {
+            background: $main-color;
+          }
+        }
+      }
+    }
+    .title {
+      justify-content: space-between;
+
+      &:hover {
+        .img-div {
+          .first-img {
+            transform: translateX(150%) rotate(45deg);
+          }
+          .second-img {
+            transform: translateX(0%) rotate(45deg);
+          }
+        }
+      }
+      .img-div {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+        overflow: hidden;
+        flex-shrink: 0;
+        img {
+          filter: invert(1);
+          width: 20px;
+          transition: all 0.3s ease-in-out;
+          transform: rotate(45deg);
+        }
+        .second-img {
+          position: absolute;
+          transform: translateX(-150%) rotate(45deg);
+        }
+      }
+    }
+    .info {
+      font-size: 14px;
+
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: $main-color;
+        margin: 0 10px;
+      }
+    }
+    // .butn .icon img {
+    //   filter: invert(1);
+    // }
+  }
+}

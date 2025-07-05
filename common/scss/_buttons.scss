@@ -1,0 +1,93 @@
+/* Buttons
+-----------------------------------------------------------------*/
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 25px;
+  transition: all 0.4s;
+  border: 1px solid black;
+  border-radius: 30px;
+  &:hover {
+    background-color: $main-color;
+    color: white;
+    img {
+      filter: invert(1);
+    }
+  }
+}
+.butn {
+  font-size: 14px;
+  font-weight: 500;
+
+  &.butn-md {
+    padding: 12px 25px;
+    transition: all 0.4s;
+  }
+
+  &.butn-rounded {
+    border-radius: 30px;
+  }
+
+  &.butn-bord {
+    border: 1px solid #ccc;
+
+    &:hover {
+      background: #212121;
+      color: #fff;
+    }
+  }
+}
+
+.butn-circle {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #141414;
+  border-radius: 50%;
+  transition: all 0.4s;
+
+  &.butn-dark {
+    color: #fff;
+    background: #141414;
+  }
+
+  &.butn-light {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background: #fff;
+      color: #141414;
+
+      .text {
+        color: #141414;
+      }
+
+      svg {
+        path {
+          stroke: #141414;
+        }
+      }
+    }
+  }
+
+  svg {
+    path {
+      transition: all 0.4s;
+    }
+  }
+
+  &:hover {
+    background: #141414;
+    color: #fff;
+
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+
+    .text-dark {
+      color: #fff !important;
+    }
+  }
+}

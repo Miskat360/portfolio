@@ -1,0 +1,105 @@
+/* --------------- Services --------------- */
+body[theme="white"] {
+  .services-mp {
+    background-color: white;
+    color: #000;
+  }
+}
+.services-mp {
+  transition: background-color 0.5s ease-in-out;
+  color: whitesmoke;
+  .sec-head {
+    margin-bottom: 100px;
+    .sec-para {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .serv-title {
+    .tab-title {
+      opacity: 0.5;
+      transition: all 0.4s;
+
+      h2 {
+        font-size: 120px;
+        line-height: 120px;
+        margin: 10px 0;
+      }
+
+      &.current {
+        opacity: 1;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+
+    .item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: translateY(50px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s;
+
+      .img {
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      &:first-of-type {
+        position: static;
+      }
+
+      &.current {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .cont {
+        margin-top: 30px;
+
+        span {
+          display: block;
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desk-md-screen) {
+  .services-mp {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .services-mp .content .item {
+    padding: 0 15px;
+  }
+  .services-mp .sec-head {
+    margin-bottom: 50px;
+  }
+  .services-mp .sec-head .sec-para {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: $tablet-sm-screen) {
+  .services-mp {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .services-mp .serv-title .tab-title h2 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin: 0;
+  }
+}

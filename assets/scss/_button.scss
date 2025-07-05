@@ -1,0 +1,16 @@
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 25px;
+  transition: all 0.4s;
+  border: 1px solid black;
+  border-radius: 30px;
+  &:hover {
+    border-color: $main-color;
+    background-color: $main-color;
+    color: white;
+    img {
+      filter: invert(1);
+    }
+  }
+}

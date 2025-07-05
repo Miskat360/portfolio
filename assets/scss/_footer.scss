@@ -1,0 +1,123 @@
+/* --------------- footer --------------- */
+
+.footer-sa {
+  padding-bottom: 10px;
+  .container {
+    overflow: hidden;
+  }
+  .call-action {
+    margin-top: 30px;
+    margin-bottom: -90px;
+    .title-font {
+      font-size: 22vw;
+      line-height: 1;
+      font-family: "Six Caps", sans-serif;
+      letter-spacing: normal;
+    }
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .contact-info {
+    // padding-top: 140px;
+    .row {
+      display: flex !important;
+      flex-direction: row !important;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin: 10px 0;
+        font-size: 20px;
+        color: $sub-color;
+      }
+      .active {
+        color: white;
+      }
+    }
+    .item {
+      margin-bottom: 50px;
+      &.footer-title {
+        font-size: 23px;
+        line-height: 34px;
+        margin-bottom: 20px;
+      }
+      span {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+    }
+
+    .social-icon {
+      // display: flex;
+      // flex-direction: column;
+      // gap: 5px;
+      img.daily-dev {
+        width: 24px;
+        filter: invert(1);
+      }
+      a {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        font-size: 14px;
+        transition: all 0.4s;
+
+        &:hover {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+  .sub-footer {
+    .row {
+      align-items: center;
+      // display: flex;
+      // flex-direction: row;
+    }
+    .copy {
+      padding: 8px 0;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-sm-screen) {
+  .desk-footer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-sm-screen) {
+  .mobile-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .desk-footer .call-action {
+    margin-bottom: -50px;
+  }
+}
+
+@media (max-width: $desk-md-screen) {
+  .desk-footer .call-action {
+    margin-bottom: -40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .desk-footer .call-action {
+    margin-bottom: -30px;
+  }
+}

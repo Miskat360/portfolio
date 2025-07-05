@@ -1,0 +1,216 @@
+/* --------------- Testimonials --------------- */
+
+body[theme="white"] {
+  .testimonials-mp {
+    background-color: white;
+    color: $bg-color;
+  }
+}
+.testimonials-mp {
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+  position: relative;
+  overflow: hidden !important;
+  .brush {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+  }
+
+  .sec-head {
+    margin-bottom: 60px;
+    .gl-rate {
+      margin: 40px auto 0;
+      width: max-content;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 60px;
+      padding: 10px 20px;
+
+      .icon {
+        width: 35px;
+      }
+
+      .cont {
+        padding-left: 30px;
+        text-align: left;
+
+        h6 {
+          line-height: 1;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        .stars {
+          font-size: 13px;
+          color: #ef2b10;
+          margin-left: 10px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  .testim-swiper {
+    position: relative;
+    overflow: visible;
+    padding: 150px 0 250px;
+    background-image: url(../imgs/testim/global.png);
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-slide {
+    margin-right: -50px;
+    width: 400px;
+    height: auto;
+  }
+
+  .item {
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+
+    .info {
+      p {
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+
+      .img-author {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+
+    &:hover {
+      z-index: 5;
+    }
+  }
+
+  .gray {
+    background-color: rgba(238, 238, 238, 1);
+    transform: rotate(-7deg);
+    .info-text p {
+      color: $bg-color;
+    }
+  }
+
+  .colorful {
+    // background-color: rgba(0, 71, 255, 1);
+    background-color: rgba(133, 238, 0, 1);
+    transform: rotate(2deg) translateY(80px);
+    z-index: 3;
+    color: $bg-color;
+    p {
+      color: #333;
+    }
+  }
+
+  .darklen {
+    background-color: rgba(21, 21, 21, 1);
+    color: #fff;
+    transform: rotate(2deg) translateY(-50px);
+
+    p {
+      color: #d3d3d3;
+    }
+  }
+
+  .lighten {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transform: rotate(-7deg);
+    z-index: 3;
+    .info-text p {
+      color: #151515;
+    }
+  }
+}
+
+// ============= [ start responsive ] ============
+
+@media screen and (max-width: $desk-md-screen) {
+  .testimonials-mp {
+    padding-top: 80px;
+    .sec-head {
+      margin-bottom: 10px;
+    }
+    .testim-swiper {
+      background-position: center 20%;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-sm-screen) {
+  .testimonials-mp {
+    .testim-swiper {
+      background-position: center 0;
+    }
+    .brush {
+      bottom: 16%;
+    }
+  }
+  .testimonials-mp .swiper-slide {
+    width: 100%;
+    padding: 50px 10px;
+    margin: 0;
+
+    .item {
+      transform: none !important;
+    }
+  }
+
+  .testimonials-mp .testim-swiper {
+    padding: 0;
+  }
+
+  .testimonials-mp .gray {
+    backdrop-filter: blur(10px);
+    background-color: rgba(238, 238, 238, 0.6);
+    .info-text p {
+      color: $bg-color;
+    }
+  }
+  .testimonials-mp .colorful {
+    backdrop-filter: blur(10px);
+    // background-color: rgba(0, 71, 255, 0.1);
+    background-color: rgba(133, 238, 0, 0.1);
+    color: $bg-color;
+    p {
+      color: $bg-color;
+    }
+  }
+
+  .testimonials-mp .darklen {
+    backdrop-filter: blur(10px);
+    background-color: rgba(21, 21, 21, 0.5);
+    color: #fff;
+    p {
+      color: #eee;
+    }
+  }
+
+  .testimonials-mp .lighten {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    .info-text p {
+      color: $bg-color;
+    }
+  }
+}

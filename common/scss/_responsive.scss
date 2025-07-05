@@ -1,0 +1,276 @@
+
+
+/* ====================== [ Start Responsive ] ====================== */
+
+@media screen and (max-width: $desk-lg-screen) {
+
+
+
+}
+
+@media screen and (max-width: $desk-md-screen) {
+
+    .md-mb10 {
+        margin-bottom: 10px;
+    }
+
+    .md-mb15 {
+        margin-bottom: 15px;
+    }
+
+    .md-mb20 {
+        margin-bottom: 20px;
+    }
+
+    .md-mb30 {
+        margin-bottom: 30px;
+    }
+
+    .md-mb40 {
+        margin-bottom: 40px;
+    }
+
+    .md-mb50 {
+        margin-bottom: 50px !important;
+    }
+
+    .md-mb80 {
+        margin-bottom: 80px;
+    }
+
+    .md-no-mrg{
+        margin: 0 !important;
+    }
+
+    .md-pb10 {
+        padding-bottom: 10px;
+    }
+
+    .md-pb20 {
+        padding-bottom: 20px;
+    }
+
+    .md-pb30 {
+        padding-bottom: 30px;
+    }
+
+    .md-pb40 {
+        padding-bottom: 40px;
+    }
+
+    .md-pb50 {
+        padding-bottom: 50px;
+    }
+
+    .md-pb60 {
+        padding-bottom: 60px;
+    }
+
+    .md-pb70 {
+        padding-bottom: 70px;
+    }
+
+    .md-pb80 {
+        padding-bottom: 80px;
+    }
+
+    .md-pt80 {
+        padding-top: 80px !important;
+    }
+
+    .md-no-pad{
+        padding: 0 !important;
+    }
+
+    .md-center{
+        text-align: center !important;
+    }
+
+    .order-md-1{
+        order: 1 !important;
+    }
+
+    .order-md-2{
+        order: 2 !important;
+    }
+
+    .order-md-3{
+        order: 3 !important;
+    }
+
+    .order-md-4{
+        order: 4 !important;
+    }
+
+    .md-hide{
+        display: none;
+    }
+
+    .justify-end{
+        justify-content: flex-start !important;
+
+        .ml-auto{
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+
+    .row{
+
+        &.sm-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        &.stand-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        &.md-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        &.lg-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        &.xlg-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    
+        &.xxlg-marg{
+            margin-left: -15px;
+            margin-right: -15px;
+    
+            >*{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: $tablet-sm-screen) {
+
+    .sm-mb10 {
+        margin-bottom: 10px;
+    }
+
+    .sm-mb20 {
+        margin-bottom: 20px;
+    }
+
+    .sm-mb30 {
+        margin-bottom: 30px;
+    }
+
+    .sm-mb40 {
+        margin-bottom: 40px;
+    }
+
+    .sm-mb50 {
+        margin-bottom: 50px;
+    }
+
+    .sm-mb60 {
+        margin-bottom: 60px;
+    }
+
+    .sm-mb80 {
+        margin-bottom: 80px;
+    }
+
+    .sm-pb10 {
+        padding-bottom: 10px;
+    }
+
+    .sm-pb20 {
+        padding-bottom: 20px;
+    }
+
+    .sm-pb30 {
+        padding-bottom: 30px;
+    }
+
+    .sm-pb40 {
+        padding-bottom: 40px;
+    }
+
+    .sm-pb50 {
+        padding-bottom: 50px;
+    }
+
+    .sm-pb60 {
+        padding-bottom: 60px;
+    }
+
+    .sm-pb70 {
+        padding-bottom: 70px;
+    }
+
+    .sm-pb80 {
+        padding-bottom: 80px;
+    }
+    
+    .sm-hide{
+        display: none !important;
+    }
+
+    .justify-end{
+        justify-content: flex-start !important;
+
+        .ml-auto{
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+
+    .progress-wrap{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: $mobile-xs-screen) {
+
+    .justify-end{
+        justify-content: flex-start !important;
+    }
+}
+
+/* ====================== [ End Responsive ] ====================== */

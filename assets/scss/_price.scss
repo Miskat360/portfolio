@@ -1,0 +1,188 @@
+/* --------------- Pricing --------------- */
+
+// .pricing-ds{
+
+//     .bg-gray{
+//         background: rgba(255,255,255,.1);
+//     }
+
+//     .pricing-tabsHead{
+
+//         .price-radios{
+//             display: inline-flex;
+//             background-color: rgba(255,255,255,.1);
+//             padding: 7px;
+//             border-radius: 50px;
+
+//             .form-check{
+//                 margin: 0;
+//                 padding: 0;
+
+//                 .form-check-label{
+//                     background-color: transparent;
+//                     font-size: 14px;
+//                     border-radius: 30px;
+//                     padding: 10px 15px;
+//                     text-transform: capitalize;
+//                     cursor: pointer;
+
+//                     small{
+//                         color: #000;
+//                         background: #fff;
+//                         padding: 1px 5px;
+//                         font-size: 10px;
+//                     }
+//                 }
+
+//                 .form-check-input{
+//                     display: none;
+//                 }
+
+//                 .form-check-input:checked ~ .form-check-label{
+//                     background-color: $main-color;
+//                 }
+//             }
+//         }
+//     }
+
+//     .content{
+//         min-width: 800px;
+//         margin-top: 50px;
+
+//         .price-head{
+//             display: flex;
+//             border-bottom: 1px solid rgba(255,255,255,.7);
+
+//             .price-headTitle{
+//                 width: 34%;
+//             }
+
+//             .price-headItem{
+//                 position: relative;
+//                 width: 22%;
+//                 text-align: center;
+//                 padding: 30px 0;
+//                 border-top-left-radius: 15px;
+//                 border-top-right-radius: 15px;
+
+//                 .label{
+//                     position: absolute;
+//                     top: -60px;
+//                     right: -15px;
+//                     z-index: 5;
+//                     width: 160px;
+//                 }
+
+//                 h6{
+//                     font-size: 14px;
+//                     letter-spacing: 1px;
+//                     text-transform: uppercase;
+//                     margin-bottom: 10px;
+//                 }
+
+//                 h2{
+//                     font-size: 40px;
+//                     letter-spacing: normal;
+//                     margin-bottom: 15px;
+
+//                     span{
+//                         font-size: 18px;
+//                         color: #999;
+//                         font-weight: 400;
+//                     }
+//                 }
+
+//                 p{
+//                     font-size: 13px;
+//                     color: #bbb;
+//                     line-height: 1.5;
+//                 }
+//             }
+//         }
+
+//         .price-body{
+
+//             .price-bodyItems{
+//                 display: flex;
+//                 border-bottom: 1px solid rgba(255,255,255,.15);
+
+//                 &:last-of-type{
+//                     border: 0;
+//                 }
+
+//                 .price-bodyTitle{
+//                     width: 34%;
+//                     padding: 15px 0;
+//                     font-size: 14px;
+//                     height: 60px;
+//                     display: flex;
+//                     align-items: center;
+//                     min-height: max-content;
+
+//                     i{
+//                         font-size: 11px;
+//                         color: #999;
+//                         margin: 0 3px;
+//                     }
+//                 }
+
+//                 .price-item{
+//                     width: 22%;
+//                     padding: 15px 0;
+//                     text-align: center;
+//                     height: 60px;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     min-height: max-content;
+
+//                     i{
+//                         color: #fff;
+//                         width: 24px;
+//                         height: 24px;
+//                         line-height: 24px;
+//                         text-align: center;
+//                         border-radius: 50%;
+//                         background: #2AA20C;
+//                         font-size: 13px;
+//                     }
+
+//                     span{
+//                         font-size: 14px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .price-foot{
+//             display: flex;
+
+//             .price-footTitle{
+//                 width: 34%;
+//             }
+
+//             .price-foot-item{
+//                 width: 22%;
+//                 text-align: center;
+//                 padding: 30px 0 50px;
+//                 border-bottom-left-radius: 15px;
+//                 border-bottom-right-radius: 15px;
+//             }
+//         }
+//     }
+
+//     .monthly_price{
+//         display: none;
+//     }
+
+//     .botm{
+//         font-size: 14px;
+//         text-align: center;
+
+//         a{
+//             color: $main-color;
+//             text-decoration: underline;
+//             margin-left: 15px;
+//         }
+//     }
+// }

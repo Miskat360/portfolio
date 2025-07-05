@@ -1,0 +1,34 @@
+
+
+/* Typography
+-----------------------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+span{
+    display: inline-block;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    
+    &:hover{
+       text-decoration: none;
+    }
+}

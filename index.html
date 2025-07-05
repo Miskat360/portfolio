@@ -1536,11 +1536,25 @@
                         </div>
                         <form
                           id="contact-form"
-                          method="post"
-                          action="contact.php"
+                          name="contact-home"
+                          method="POST"
+                          data-netlify="true"
+                          netlify
+                          data-netlify-honeypot="bot-field"
                         >
-                          <div class="messages"></div>
+                          <!-- Required for Netlify -->
+                          <input
+                            type="hidden"
+                            name="form-name"
+                            value="contact-home"
+                          />
+                          <input
+                            type="text"
+                            name="bot-field"
+                            style="display: none"
+                          />
 
+                          <div class="messages"></div>
                           <div class="controls row">
                             <div class="col-lg-6">
                               <div class="form-group mb-30">
@@ -1552,8 +1566,13 @@
                                   type="text"
                                   name="name"
                                   placeholder="Your full name"
-                                  required="required"
+                                  required
                                 />
+                                <small
+                                  class="error-message"
+                                  style="color: red; display: none"
+                                  >Please enter your name.</small
+                                >
                               </div>
                             </div>
 
@@ -1568,8 +1587,13 @@
                                   type="email"
                                   name="email"
                                   placeholder="Your email address"
-                                  required="required"
+                                  required
                                 />
+                                <small
+                                  class="error-message"
+                                  style="color: red; display: none"
+                                  >Please enter a valid email.</small
+                                >
                               </div>
                             </div>
 
@@ -1583,8 +1607,13 @@
                                   type="text"
                                   name="subject"
                                   placeholder="subject"
-                                  required="required"
+                                  required
                                 />
+                                <small
+                                  class="error-message"
+                                  style="color: red; display: none"
+                                  >Please enter a subject.</small
+                                >
                               </div>
                             </div>
 
@@ -1601,21 +1630,27 @@
                                   type="text"
                                   name="budget"
                                   placeholder="A range of budget for project"
-                                  required="required"
                                 />
                               </div>
                             </div>
 
                             <div class="col-12">
                               <div class="form-group">
-                                <label for="form_message">Message</label>
+                                <label for="form_message"
+                                  >Message<span class="star">*</span></label
+                                >
                                 <textarea
                                   id="form_message"
                                   name="message"
                                   placeholder="Write your message here..."
                                   rows="4"
-                                  required="required"
+                                  required
                                 ></textarea>
+                                <small
+                                  class="error-message"
+                                  style="color: red; display: none"
+                                  >Please enter a message.</small
+                                >
                               </div>
                               <div class="mt-60">
                                 <button
@@ -1630,6 +1665,16 @@
                                     />
                                   </span>
                                 </button>
+                              </div>
+                              <div
+                                id="form-feedback"
+                                style="
+                                  color: green;
+                                  display: none;
+                                  margin-top: 15px;
+                                "
+                              >
+                                ✅ Your message has been sent!
                               </div>
                             </div>
                           </div>
@@ -1808,6 +1853,49 @@
         </main>
       </div>
     </div>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const feedback = document.getElementById("form-feedback");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let hasError = false;
+        const fields = form.querySelectorAll("[required]");
+        form
+          .querySelectorAll(".error-message")
+          .forEach((msg) => (msg.style.display = "none"));
+
+        fields.forEach((field) => {
+          if (!field.value.trim()) {
+            const errorMsg =
+              field.parentElement.querySelector(".error-message");
+            if (errorMsg) errorMsg.style.display = "block";
+            hasError = true;
+          }
+        });
+
+        if (hasError) return;
+
+        const formData = new FormData(form);
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => {
+            feedback.style.display = "block";
+            form.reset(); // ✅ Clear all fields
+          })
+          .catch(() => {
+            feedback.textContent = "❌ Something went wrong. Please try again.";
+            feedback.style.color = "red";
+            feedback.style.display = "block";
+          });
+      });
+    </script>
 
     <!-- jQuery -->
     <script src="../common/js/lib/jquery-3.6.0.min.js"></script>

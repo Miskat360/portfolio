@@ -244,10 +244,14 @@
                           method="POST"
                           data-netlify="true"
                         >
-                          <!-- onsubmit="submit" -->
-                          <!-- action="contact.php" -->
-                          <div class="messages"></div>
+                          <!-- ✅ Required hidden input -->
+                          <input
+                            type="hidden"
+                            name="form-name"
+                            value="contact"
+                          />
 
+                          <div class="messages"></div>
                           <div class="controls row">
                             <div class="col-lg-6">
                               <div class="form-group mb-30">

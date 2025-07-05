@@ -1,73 +1,34 @@
-/* --------------- Clients --------------- */
-
-// .brand-ds{
-
-//     .item{
-//         position: relative;
-//         display: flex;
-//         align-items: center;
-
-//         &:after{
-//             content: '';
-//             position: absolute;
-//             top: -20px;
-//             left: -20px;
-//             right: -20px;
-//             bottom: -20px;
-//             border: 1px solid #ccc;
-//             border-radius: 50%;
-//             pointer-events: none;
-//             transition: all .4s;
-//         }
-
-//         .text-center{
-//             width: 100%;
-//         }
-
-//         .img{
-//             width: 50px;
-//             margin: auto;
-//             opacity: .25;
-//             transition: all .4s;
-//         }
-
-//         p{
-//             margin-top: 30px;
-//         }
-
-//         &:nth-of-type(3),
-//         &:nth-of-type(4){
-
-//             .img{
-//                 width: 70px;
-//             }
-//         }
-
-//         &:hover{
-//             z-index: 4;
-
-//             &:after{
-//                 border-color: $main-color;
-//             }
-
-//             .img{
-//                 opacity: 1;
-//             }
-//         }
-//     }
-// }
-
+/* --------------- Tech stack --------------- */
+body[theme="white"] {
+  .tech-stack {
+    background-color: white;
+    color: #000;
+    .sec-head {
+      color: $bg-color;
+      p {
+        color: $bg-color;
+      }
+    }
+    .mobile-icons {
+      .item {
+        background-color: #f0f0f0;
+        color: #000;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
 .tech-stack {
-  background-color: white;
+  background-color: transparent;
+  color: whitesmoke;
   .container {
     padding-top: 140px;
     padding-bottom: 140px;
   }
   .sec-head {
     margin-bottom: 80px;
-    color: $bg-color;
+    color: whitesmoke;
     p {
-      color: $bg-color;
       margin-bottom: 15px;
       font-size: 20px;
     }
@@ -84,11 +45,10 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      background-color: #f8f8f8;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      color: rgba(0, 0, 0, 0.8);
+      background-color: #171717;
+      border: 1px solid #ffffff1a;
+      color: whitesmoke;
       font-size: 16px;
-      font-weight: 600;
       border-radius: 12px;
       padding: 6px 16px;
       svg {

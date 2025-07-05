@@ -71,7 +71,7 @@ $(function () {
         trigger: e,
         start: "top 50%",
         end: "bottom 50%",
-        markers: true,
+        markers: false,
         onEnter: function () {
           document.body.setAttribute("theme", e.dataset.bg_color);
         },

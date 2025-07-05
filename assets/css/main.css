@@ -603,9 +603,26 @@ body[theme=white] .services-mp {
   margin: 0 10px;
 }
 
-/* --------------- Clients --------------- */
-.tech-stack {
+/* --------------- Tech stack --------------- */
+body[theme=white] .tech-stack {
   background-color: white;
+  color: #000;
+}
+body[theme=white] .tech-stack .sec-head {
+  color: var(--bg-color);
+}
+body[theme=white] .tech-stack .sec-head p {
+  color: var(--bg-color);
+}
+body[theme=white] .tech-stack .mobile-icons .item {
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack {
+  background-color: transparent;
+  color: whitesmoke;
 }
 .tech-stack .container {
   padding-top: 140px;
@@ -613,10 +630,9 @@ body[theme=white] .services-mp {
 }
 .tech-stack .sec-head {
   margin-bottom: 80px;
-  color: var(--bg-color);
+  color: whitesmoke;
 }
 .tech-stack .sec-head p {
-  color: var(--bg-color);
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -633,11 +649,10 @@ body[theme=white] .services-mp {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background-color: #f8f8f8;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.8);
+  background-color: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  color: whitesmoke;
   font-size: 16px;
-  font-weight: 600;
   border-radius: 12px;
   padding: 6px 16px;
 }
